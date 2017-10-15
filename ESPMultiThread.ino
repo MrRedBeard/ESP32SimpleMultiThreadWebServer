@@ -46,6 +46,7 @@ void setup()
   Serial.println(WiFi.localIP()); 
   server.begin();
 
+  //Start the second thread
   xTaskCreatePinnedToCore(loop1, "loop1", 4096, NULL, 1, NULL, ARDUINO_RUNNING_CORE);
 }
 
@@ -81,7 +82,7 @@ void loop()
           client.println();
           client.println("<!DOCTYPE HTML><html><head>");
           client.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"></head>");
-          client.println("<h1>Backlit Greys</h1>");
+          client.println("<h1>Simple Web Control Interface</h1>");
           client.println("<p>Lights <a href=\"on\"><button>ON</button></a>&nbsp;<a href=\"off\"><button>OFF</button></a></p>");
           client.println("</html>");
           break;
