@@ -5,3 +5,9 @@ Derived from multi process loops by https://github.com/copercini
 https://github.com/copercini/esp32-iot-examples/blob/master/multiloop/multiloop.ino
 
 Derived from the ESP32 webserver sample
+
+LED is hooked to pin 12
+![alt text](https://github.com/MrRedBeard/ESP32MultiProcessWebServer/raw/master/Board.gif)
+
+Very simple Web Interface
+![alt text](https://github.com/MrRedBeard/ESP32MultiProcessWebServer/raw/master/WebInterface.PNG)
