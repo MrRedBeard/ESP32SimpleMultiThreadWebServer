@@ -1,6 +1,8 @@
 # ESP32MultiProcessWebServer
 Simple multithreaded Web Server that utilizes 2 cores of the ESP32 separating the web server from the additional executable tasks. Using xTaskCreatePinnedToCore and global variables I can kick off a seperate thread from my main loop running the webserver. 
 
+# Don't use! Something in my logic is messed up and this errors out when controlling WS2812B's. If you know why this wouldn't work I'm all ears.
+
 Derived from multi process loops by https://github.com/copercini
 https://github.com/copercini/esp32-iot-examples/blob/master/multiloop/multiloop.ino
 
