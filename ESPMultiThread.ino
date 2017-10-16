@@ -133,6 +133,8 @@ void loop1(void *pvParameters)
    if(ledon == true)
     {
       digitalWrite(LED_PIN, HIGH);
+      delay(100);
+      digitalWrite(LED_PIN, LOW);
     }
     else
     {
